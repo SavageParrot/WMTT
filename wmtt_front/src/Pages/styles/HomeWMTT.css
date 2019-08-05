@@ -1,0 +1,22 @@
+.homeview {
+    padding-top: 70px;
+}
+@font-face {
+    font-family: Chocolatines;
+    src: url(../../Fonts/Chocolatines.ttf)
+}
+.Homebox {
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    border-bottom: 3px solid;
+    border-color: black;
+    background-color: #548359;
+}
+.Homeimg {
+    margin: auto;    
+}
+.Hometext {
+    font-family: 'Chocolatines';
+    font-size: 90px;
+}

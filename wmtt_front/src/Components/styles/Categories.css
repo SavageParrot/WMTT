@@ -1,0 +1,16 @@
+.Categoriesbox {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    border-bottom: 3px solid;
+    border-color: black;
+    background-color: #548359;
+}
+.Boxtittle {
+    font-family:'chocolatines';
+    font-size: 40px;
+    font-weight: bold;
+}
+.itemText {
+    color: black !important;
+}

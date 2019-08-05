@@ -1,0 +1,9 @@
+.Artistsbox {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    border-bottom: 3px solid;
+    border-color: black;
+    background-color:#81c784
+    
+}
