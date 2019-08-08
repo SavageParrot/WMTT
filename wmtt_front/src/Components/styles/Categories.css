@@ -4,7 +4,8 @@
     align-items: center;
     border-bottom: 3px solid;
     border-color: black;
-    background-color: #548359;
+    background-color: #556573;
+    border-radius: 10px;
 }
 .Boxtittle {
     font-family:'chocolatines';

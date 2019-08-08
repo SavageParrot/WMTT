@@ -28,7 +28,7 @@ class Categories extends React.Component {
                                             <p>I am a very simple card. I am good at containing small bits of information.</p>
                                         </div>
                                         <div className="card-action">
-                                            <a href="#">This is a link</a>
+                                            <a href="">This is a link</a>
                                         </div>
                                     </div>
                                 </div>

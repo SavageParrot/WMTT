@@ -11,12 +11,28 @@
     align-items: center;
     border-bottom: 3px solid;
     border-color: black;
-    background-color: #548359;
+    background-color: #556573;
+    border-radius: 10px;
+}
+.ulbox{
+    width: 100%
 }
 .Homeimg {
     margin: auto;    
 }
 .Hometext {
     font-family: 'Chocolatines';
-    font-size: 90px;
+    font-size: 8vw;
+    color: white;
+}
+
+.Background {
+    padding: 0 90px;
+    background-image: url('../../img/backg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.Homespacer {
+    width: 100%;
+    height: 50vh;
 }
