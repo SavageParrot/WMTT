@@ -9,7 +9,7 @@ const Navbar = props => (
     <header className='Navbar1'>
         <nav className='Navbar_navigation'>
             <div className='Navbar_logo'>
-                <a href='#inicio'><img src={LogoNav} className='NavLogo'></img>
+                <a href='#inicio'><img src={LogoNav} alt='' className='NavLogo'></img>
                 </a>
             </div>
             <div className='spacer'></div>
@@ -17,7 +17,7 @@ const Navbar = props => (
                 <ul>
                     <li><a href='#inicio'>Inicio</a></li>
                     <li><a href='#artistas'>Artistas</a></li>
-                    <li><a href='#categorias'>Categorias</a></li>
+                    <li><a href='#categorias'>Contacto</a></li>
                 </ul>
             </div>
         </nav>

@@ -62,11 +62,17 @@ class HomeWMTT extends React.Component {
                     </div>
                     <div className='Homespacer'></div>
                     <div id='artistas' className='Artistsback'>
-                        <ul className="row ulbox">
-                            <li className="" >
-                                <div className='Cardcontainer sidesPadding'>
+                        <div className='tittle'>
+                            <h1 className='Boxtittle'>Artistas</h1><br />
+                        </div>
+                        <div className='container'>
+                            <Categories />
+                        </div>
+                        <div className='Flexbox'>
+                            <ul className="row sidesPadding">
+                                <li className="" >
                                     {this.state.data.list.map(Artist => (
-                                        <div className='CardSize'>
+                                        <div className='CardSize col s12 m4 l4'>
                                             <ArtistCard
                                                 FullName={Artist.FullName}
                                                 BirthDate={Artist.BirthDate}
@@ -77,14 +83,14 @@ class HomeWMTT extends React.Component {
                                             />
                                         </div>
                                     ))}
-                                </div>
-                            </li>
-                        </ul>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                     <div className='Homespacer'></div>
-                    <div id='categorias' className='Categoriesbox'>
+                    {/* <div id='categorias' className='Categoriesbox'>
                         <Categories />
-                    </div>
+                    </div> */}
                 </div>
             </div>
         )

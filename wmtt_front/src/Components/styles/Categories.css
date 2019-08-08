@@ -1,17 +1,16 @@
-.Categoriesbox {
-    height: 100vh;
+.categories {
     display: flex;
-    align-items: center;
-    border-bottom: 3px solid;
-    border-color: black;
-    background-color: #556573;
-    border-radius: 10px;
+    padding-left: 15%;
 }
-.Boxtittle {
-    font-family:'chocolatines';
-    font-size: 40px;
-    font-weight: bold;
+.categoriesBox {
+    width: 100%;
 }
-.itemText {
-    color: black !important;
+form p {
+    width: 100%;
+}
+form p label span {
+    font-family: 'Nunito', sans-serif;
+    color: white;
+    font-size: 1.5vw!important;
+    
 }

@@ -1,3 +1,9 @@
+body {
+    background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url('../../img/backg.jpg') ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
 .homeview {
     padding-top: 70px;
 }
@@ -14,9 +20,7 @@
     background-color: #556573;
     border-radius: 10px;
 }
-.ulbox{
-    width: 100%
-}
+
 .Homeimg {
     margin: auto;    
 }
@@ -28,11 +32,20 @@
 
 .Background {
     padding: 0 90px;
-    background-image: url('../../img/backg.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
+    
 }
 .Homespacer {
     width: 100%;
-    height: 50vh;
+    height: 20vh;
+}
+.tittle {
+    text-align: center;
+    padding-top: 2%;
+}
+.Boxtittle {
+    font-family:'chocolatines';
+    font-size: 5vw;
+    font-weight: bold;
+    margin: 0;
+    color: #011126;
 }
