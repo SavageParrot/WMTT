@@ -5,9 +5,19 @@ import './styles/Artists.css'
 
 
 class ArtistCard extends React.Component {
-   render() {
-      
+   
+   state = {
+      Age : new Date(this.props.BirthDate)
+   };
 
+   calculateYears(oldDate) { // oldDate is a date
+      var ageDifMs = Date.now() - oldDate.getTime();
+      var ageDate = new Date(ageDifMs); // miliseconds from epoch
+      return Math.abs(ageDate.getUTCFullYear() - 1970);
+  }
+
+   render() {
+      console.log(this.state.Age);
       return (
          <div className="card">
             <div className="card-image circle waves-effect waves-block waves-light">
@@ -19,11 +29,11 @@ class ArtistCard extends React.Component {
             </div>
             <div className="card-reveal">
                <span className="card-title">{this.props.FullName}<i className="material-icons right">arrow_drop_down</i></span>
-               <p className='cardinfo'>Born Date :</p><p> {this.props.BirthDate}</p>
-               <p className='cardinfo'>Start Date :</p><p> {this.props.StartDate}</p>
-               <p className='cardinfo'>Email :</p><p> {this.props.Email}</p>
-               <p className='cardinfo'>Phone Number :</p><p> {this.props.PhoneNumber}</p>
-               <p className='cardinfo'>Address :</p><p> {this.props.Address}</p>
+               <p className='cardinfo'>Edad :</p><p> {this.calculateYears(new Date(this.props.BirthDate))} años</p>
+               <p className='cardinfo'>Experiencia :</p><p> {this.calculateYears(new Date(this.props.StartDate))} años</p>
+               <p className='cardinfo'>Correo :</p><p> {this.props.Email}</p>
+               <p className='cardinfo'>Nùmero de contacto :</p><p> {this.props.PhoneNumber}</p>
+               <p className='cardinfo'>Direcciòn :</p><p> {this.props.Address}</p>
             </div>
          </div>
 

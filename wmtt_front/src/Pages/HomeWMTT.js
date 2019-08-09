@@ -21,6 +21,19 @@ class HomeWMTT extends React.Component {
         nextPage: 1
     };
 
+    handleChange = dataFromCategory => {
+        this.setState({
+            loading: false,
+            data: {
+                idElement: dataFromCategory.idElement,
+                errorMessage: dataFromCategory.errorMessage,
+                succeed: dataFromCategory.succeed,
+                response: dataFromCategory.response,
+                list: dataFromCategory.list,
+            }
+        });
+    }
+
     componentDidMount() {
         this.fetchArtists();
     }
@@ -33,8 +46,6 @@ class HomeWMTT extends React.Component {
             );
 
             const dataReceived = await response.json();
-            console.log(dataReceived);
-
             this.setState({
                 loading: false,
                 data: {
@@ -66,7 +77,7 @@ class HomeWMTT extends React.Component {
                             <h1 className='Boxtittle'>Artistas</h1><br />
                         </div>
                         <div className='container'>
-                            <Categories />
+                            <Categories newSearch={this.handleChange}/>
                         </div>
                         <div className='Flexbox'>
                             <ul className="row sidesPadding">
