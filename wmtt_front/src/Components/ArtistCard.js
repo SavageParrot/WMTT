@@ -5,10 +5,6 @@ import './styles/Artists.css'
 
 
 class ArtistCard extends React.Component {
-   
-   state = {
-      Age : new Date(this.props.BirthDate)
-   };
 
    calculateYears(oldDate) { // oldDate is a date
       var ageDifMs = Date.now() - oldDate.getTime();
@@ -17,7 +13,6 @@ class ArtistCard extends React.Component {
   }
 
    render() {
-      console.log(this.state.Age);
       return (
          <div className="card">
             <div className="card-image circle waves-effect waves-block waves-light">
